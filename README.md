@@ -2,7 +2,8 @@
 
 <p><img src=".assets/asset-01.png" align="center" width="100%"></p>
 
-Curated collection of ultra high quality wallpapers crafted for Node.js enthusiasts. Featuring vibrant greens and stunning visuals inspired by server-side development and the growing ecosystem around it.
+Curated collection of ultra-high quality wallpapers crafted for Node.js enthusiasts. Featuring vibrant greens and stunning visuals inspired by server-side development and the growing ecosystem around it.
+
 ## Wallpaper Collection
 
 <!-- START_BLOCK -->
@@ -12,7 +13,7 @@ Curated collection of ultra high quality wallpapers crafted for Node.js enthusia
 ## Change macOS Wallpaper
 
 ```sh
-address="https://github.com/olankens/nodpaper/raw/HEAD/src/node-01.avif"
+address="https://github.com/olankens/nodpaper/raw/HEAD/wallpapers/node-01.avif"
 picture="$HOME/Pictures/Wallpapers/$(basename "$address")"
 rm -v "$HOME/Library/Application Support/com.apple.wallpaper/Store/Index.plist"
 killall WallpaperAgent
