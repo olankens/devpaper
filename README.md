@@ -2,7 +2,7 @@
 
 <p><img src=".assets/preview-01.avif" align="center" width="100%"></p>
 
-Curated collection of ultra-high quality wallpapers carefully crafted for developers and tech enthusiasts. Featuring stunning visuals inspired by software development and the growing ecosystem around it.
+Wallpapers dedicated to software development enthusiasts featuring images scraped from the AppSignal blog and then carefully upscaled to a much higher resolution using the upscayl-bin executable program.
 
 ## Node Wallpapers
 
@@ -19,7 +19,7 @@ Curated collection of ultra-high quality wallpapers carefully crafted for develo
 ## Change macOS Wallpaper
 
 ```sh
-address="https://github.com/olankens/nodpaper/raw/HEAD/wallpapers/node-01.avif"
+address="https://github.com/olankens/devpaper/raw/HEAD/wallpapers/node-01.avif"
 picture="$HOME/Pictures/Wallpapers/$(basename "$address")"
 rm -v "$HOME/Library/Application Support/com.apple.wallpaper/Store/Index.plist"
 killall WallpaperAgent
