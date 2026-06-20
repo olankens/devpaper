@@ -11,7 +11,7 @@ MAX=${#ALL[@]}
 TXT=""
 for NUM in "${!ALL[@]}"; do
 	ALN=$( [ "$NUM" -lt $(( MAX - (MAX % 4 == 0 ? 4 : MAX % 4) )) ] && echo ' align="center"' || echo '' )
-	TXT="${TXT}<a href=\"wallpapers/$(basename "${ALL[$NUM]}" | sed "s/^thumbnail-//")\"><img src=\".assets/$(basename "${ALL[$NUM]}")\"${ALN} width=\"25%\"></a>"
+	TXT="${TXT}<a href=\"source/$(basename "${ALL[$NUM]}" | sed "s/^thumbnail-//")\"><img src=\".assets/$(basename "${ALL[$NUM]}")\"${ALN} width=\"25%\"></a>"
 done
 awk -v BLK="<p>${TXT}</p>" '
 	/<!-- START_NODE -->/ { print; print BLK; skip=1; next }
@@ -24,7 +24,7 @@ MAX=${#ALL[@]}
 TXT=""
 for NUM in "${!ALL[@]}"; do
 	ALN=$( [ "$NUM" -lt $(( MAX - (MAX % 4 == 0 ? 4 : MAX % 4) )) ] && echo ' align="center"' || echo '' )
-	TXT="${TXT}<a href=\"wallpapers/$(basename "${ALL[$NUM]}" | sed "s/^thumbnail-//")\"><img src=\".assets/$(basename "${ALL[$NUM]}")\"${ALN} width=\"25%\"></a>"
+	TXT="${TXT}<a href=\"source/$(basename "${ALL[$NUM]}" | sed "s/^thumbnail-//")\"><img src=\".assets/$(basename "${ALL[$NUM]}")\"${ALN} width=\"25%\"></a>"
 done
 awk -v BLK="<p>${TXT}</p>" '
 	/<!-- START_PYTHON -->/ { print; print BLK; skip=1; next }

@@ -3,7 +3,7 @@
 set -euo pipefail
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
-SRC="$DIR/../wallpapers"
+SRC="$DIR/../source"
 OUT="$DIR/../.assets"
 
 for IMG in "$SRC"/*.avif; do
