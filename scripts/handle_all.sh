@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
 bash "$DIR/handle_upscale.sh"
