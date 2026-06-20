@@ -19,7 +19,7 @@ Wallpapers dedicated to software development enthusiasts featuring images scrape
 ## Change macOS Wallpaper
 
 ```sh
-address="https://github.com/olankens/devpaper/raw/HEAD/wallpapers/node-01.avif"
+address="https://github.com/olankens/devpaper/raw/HEAD/source/node-01.avif"
 picture="$HOME/Pictures/Wallpapers/$(basename "$address")"
 rm -v "$HOME/Library/Application Support/com.apple.wallpaper/Store/Index.plist"
 killall WallpaperAgent
